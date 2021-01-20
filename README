@@ -1,0 +1,9 @@
+To run:
+1. mvn clean package
+2. java -jar target/localstack-error-1.0-SNAPSHOT-jar-with-dependencies.jar
+
+The first run will launch the container and exit. A second run will hang attempting to launch the container. 
+
+I am able to repro this on Docker For Mac 3.0.0+ running Docker Engine 20+
+
+This does not repro on Docker For Mac 2.5.0.1 running Docker Engine 19
